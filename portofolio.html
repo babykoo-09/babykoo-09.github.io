@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Alya</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff5fb;
+      transition: background 0.3s ease;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ffe0ed, #fcb1d1);
+      padding: 30px 20px;
+      text-align: center;
+      color: #5e2a7b;
+      animation: fadeInDown 1s ease;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .nav-block {
+      background-color: #f7b3cd;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+
+    nav a {
+      display: flex;
+      align-items: center;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    nav a img {
+      margin-right: 5px;
+      width: 20px;
+      height: 20px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background-color: blueviolet;
+      color: white;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .section {
+      display: none;
+      background-color: #f7b3cd;
+      padding: 20px;
+      border-radius: 10px;
+      color: #4b006e;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      animation: fadeInUp 0.6s ease;
+    }
+
+    .section img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .profile-card {
+      text-align: center;
+      
+    }
+
+    .bingkai-bulat {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid white;
+  box-shadow: 0 0 0 6px #f9cce3; 
+  overflow: hidden;
+  margin: 0 auto 20px auto;
+}
+
+.bingkai-bulat img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+    .social-icons img {
+      width: 50px;
+      margin: 6px;
+      transition: transform 0.3s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    footer {
+      text-align: center;
+      background-color: #ffe0ed;
+      padding: 15px;
+      color: #5e2a7b;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px){
+        nav a{
+            font-size: 12px;
+            padding: 6px 10px;
+        }
+
+        header h1{
+            font-size: 22px;
+        }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portofolio Alya</h1>
+    <div class="nav-block">
+      <nav>
+        <ul>
+          <li><a href="#" class="active" onclick="showSection(event,'beranda')"><img src="https://img.icons8.com/ios-filled/20/home.png">Beranda</a></li>
+          <li><a href="#" onclick="showSection(event,'tentangSaya')"><img src="https://img.icons8.com/ios-filled/20/user.png">Tentang Saya</a></li>
+          <li><a href="#" onclick="showSection(event,'pendidikan')"><img src="https://img.icons8.com/ios-filled/20/school.png">Pendidikan</a></li>
+          <li><a href="#" onclick="showSection(event,'skill')"><img src="https://img.icons8.com/ios-filled/20/light-on.png">Skill</a></li>
+          <li><a href="#" onclick="showSection(event,'riwayat')"><img src="https://img.icons8.com/ios-filled/20/task.png">Riwayat</a></li>
+          <li><a href="#" onclick="showSection(event,'kontak')"><img src="https://img.icons8.com/ios-filled/20/phone.png">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="beranda" class="section" style="display:block;">
+      <h2>Beranda</h2>
+      <p>Selamat datang di website portofolio Alya Nur Kinasih 🎀</p>
+      <blockquote><i>"Bermimpilah setinggi langit. Jika kamu jatuh, kamu akan jatuh di antara bintang-bintang."</i></blockquote>
+      <p>Silakan pilih menu di atas untuk mengenal aku lebih dekat!</p>
+      <audio controls>
+        <source src="37-soft-bee-korea-trap-beat-instr-318581.mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung pemutar audio.
+      </audio>
+    </div>
+
+    <<div id="tentangSaya" class="section">
+      <h2>Tentang Saya</h2>
+      <div class="profile-card">
+        <div class="bingkai-bulat">
+          <img src="koko.jpg" alt="foto koko">
+        </div>
+        <div>
+          <p>Hai, aku Alya. Aku pelajar SMKN 1 BAWANG jurusan PPLG. Lahir di tahun 2009, hobi ku sederhana hanya membaca dan menulis.</p>
+          <p>Hal yang paling ku suka adalah tidur. Dan karena suka tidur, salah satu teman ku jadi menamaiku koala. Yaa.. Koala kan tidurnya lama sama kayak aku</p>
+          <p>Fyi, aku selalu pindah-pindah sekolah. Bukan karena bermasalah lho ya, cuma karena ngikut orang tua aja.</p>
+        </div>
+      </div>
+    </div>
+    
+
+    <div id="pendidikan" class="section">
+      <h2>Pendidikan</h2>
+      <ul>
+        <li>SDN 2 KASILIB : BANJARNEGARA</li>
+        <li>SMPN 2 KUTASARI : PURBALINGGA</li>
+        <li>SMKN 1 BAWANG : BANJARNEGARA</li>
+      </ul>
+    </div>
+
+    <div id="skill" class="section">
+      <h2>Skill</h2>
+      <p>Sebagai seorang INFP, aku punya beberapa soft skill:</p>
+      <ul>
+        <li>Kreatif</li>
+        <li>Adaptif</li>
+        <li>Inspiratif</li>
+        <li>Autentik</li>
+        <li>Peka secara emosional</li>
+      </ul>
+    </div>
+
+    <div id="riwayat" class="section">
+      <h2>Riwayat Proyek</h2>
+      <ul>
+        <li><a href="https://www.figma.com/design/dFLPmTGXDzXsZpwBa6Apgh/Untitled?node-id=0-1" target="_blank">Desain UI dengan Figma (Kelompok)</a></li>
+      </ul>
+    </div>
+
+    <div id="kontak" class="section">
+      <h2>Kontak</h2>
+      <div class="profile-card">
+        <div class="social-icons">
+          <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"><img src="https://img.icons8.com/color/48/gmail--v1.png" alt="Gmail" /></a>
+          <a href="https://instagram.com/secret_youngkim" target="_blank"><img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram" /></a>
+          <a href="https://wa.me/qr/EBH2XRHDU2FNI1" target="_blank"><img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp" /></a>
+          <a href="https://github.com/babykoo-09" target="_blank"><img src="https://img.icons8.com/ios-glyphs/48/github.png" alt="GitHub" /></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 | Alya</p>
+  </footer>
+
+  <script>
+    function showSection(e, id) {
+      e.preventDefault();
+      document.querySelectorAll('.section').forEach(section => {
+        section.style.display = 'none';
+      });
+      document.querySelectorAll('nav a').forEach(link => {
+        link.classList.remove('active');
+      });
+      document.getElementById(id).style.display = 'block';
+      e.currentTarget.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
